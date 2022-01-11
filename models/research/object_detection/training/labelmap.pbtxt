@@ -1,0 +1,19 @@
+item {
+  id: 1
+  name: 'white'
+}
+
+item {
+  id: 2
+  name: 'yellow'
+}
+
+item {
+  id: 3
+  name: 'pod'
+}
+
+item {
+  id: 4
+  name: 'bud'
+}

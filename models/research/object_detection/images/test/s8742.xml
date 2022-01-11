@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>s8742.jpg</filename>
+	<path>C:\tensorflow1\models\research\object_detection\images\test\s8742.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>yellow</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>69</xmax>
+			<ymax>266</ymax>
+		</bndbox>
+	</object>
+</annotation>

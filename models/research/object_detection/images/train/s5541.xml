@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>s5541.jpg</filename>
+	<path>C:\tensorflow1\models\research\object_detection\images\train\s5541.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>yellow</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>381</xmin>
+			<ymin>18</ymin>
+			<xmax>749</xmax>
+			<ymax>493</ymax>
+		</bndbox>
+	</object>
+</annotation>

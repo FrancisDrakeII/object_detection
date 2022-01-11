@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>s1336.jpg</filename>
+	<path>C:\tensorflow1\models\research\object_detection\images\train\s1336.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pod</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>9</ymin>
+			<xmax>663</xmax>
+			<ymax>56</ymax>
+		</bndbox>
+	</object>
+</annotation>
