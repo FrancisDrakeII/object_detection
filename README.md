@@ -4,6 +4,7 @@ Hardware:
 
 OS:  
         1. Windows 10  
+        
 Software:  
         1. tensorflow-gpu-1.13.2  
         2. CUDA: 7.4  
