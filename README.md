@@ -28,4 +28,4 @@ CUDA is a parallel computing platform and API that allows software to use certai
 cuDNN is a GPU-accelerated library primitives for deep neural networks. Here's the download site https://developer.nvidia.com/cudnn-download-survey Make sure you select the compatible version.
 
 
-
+  
