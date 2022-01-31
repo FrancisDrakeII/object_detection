@@ -1,12 +1,12 @@
 ## Below is the hardware and software environment.  
-Hardware:
-  NVIDIA RTX 2060 Super
-OS:
-  Windows 10
-Software:
-  tensorflow-gpu-1.13.2
-  CUDA: 7.4
-  cuDNN: 10
+Hardware:  
+  NVIDIA RTX 2060 Super  
+OS:  
+  Windows 10  
+Software:  
+  tensorflow-gpu-1.13.2  
+  CUDA: 7.4  
+  cuDNN: 10  
   
 
 ## Virtual Environment creation
