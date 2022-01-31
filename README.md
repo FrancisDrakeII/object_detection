@@ -21,10 +21,7 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 5. Activate this environment and update pip  
         ``` activate xxxx```  
         ``` python -m pip install --upgrade pip```  
-7.   
-
-
-## This website gives you the tested build configurations for windows OS. https://www.tensorflow.org/install/source_windows 
+6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. 
 For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. There are lots of Python Complier/IDE right now, if you are using MSVC, please follow the corresponding Complier version. 
 
 ## CUDA and cuDNN installation 
