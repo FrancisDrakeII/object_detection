@@ -1,6 +1,7 @@
 ## Below is the hardware and software environment.  
 Hardware:  
-1. NVIDIA RTX 2060 Super  
+    1. NVIDIA RTX 2060 Super  
+
 OS:  
 1. Windows 10  
 Software:  
