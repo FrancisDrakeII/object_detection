@@ -1,4 +1,9 @@
-# I highly recommend using the NVIDIA series GPU for training. And this introduction is based on the premise that you own a NVIDIA series GPU. This repo used tensorflow-gpu-1.13.2! 
+# I highly recommend using the NVIDIA series GPU for training. And this introduction is based on the premise that you own a NVIDIA series GPU. This repo used tensorflow-gpu-1.13.2 running on Windows OS.
+
+## Virtual Environment creation
+A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
+1. Download and install Anaconda for windows https://www.anaconda.com/products/individual   
+
 
 ## This website gives you the tested build configurations for windows OS. https://www.tensorflow.org/install/source_windows 
 For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. There are lots of Python Complier/IDE right now, if you are using MSVC, please follow the corresponding Complier version. 
