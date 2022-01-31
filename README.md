@@ -1,4 +1,13 @@
-# I highly recommend using the NVIDIA series GPU for training. And this introduction is based on the premise that you own a NVIDIA series GPU. This repo used tensorflow-gpu-1.13.2 running on Windows OS.
+## Below is the hardware and software environment.  
+Hardware:
+  NVIDIA RTX 2060 Super
+OS:
+  Windows 10
+Software:
+  tensorflow-gpu-1.13.2
+  CUDA: 7.4
+  cuDNN: 10
+  
 
 ## Virtual Environment creation
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
