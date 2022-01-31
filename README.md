@@ -26,6 +26,8 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 ## CUDA and cuDNN installation 
 [CUDA](https://developer.nvidia.com/cuda-toolkit) is a parallel computing platform and API that allows software to use certain types of GPU for general purpose. Make sure you select the compatible version.     
 [cuDNN](https://developer.nvidia.com/cudnn-download-survey) is a GPU-accelerated library primitives for deep neural networks. Make sure you select the compatible version.
+Configuration of CUDA and cuDNN should be automaticlly done, however, I recommend go to the windows system variable window to look it up.  
+A restart of the system is recommended after the installation of CUDA and cuDNN. 
 
 
   
