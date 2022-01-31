@@ -7,13 +7,17 @@ OS:
         
 Software:  
         1. tensorflow-gpu-1.13.2  
-        2. CUDA: 7.4  
-        3. cuDNN: 10  
+        2. Python = 3.7
+        3. CUDA: 7.4  
+        4. cuDNN: 10  
   
 
 ## Virtual Environment creation
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
 1. Download and install Anaconda for windows https://www.anaconda.com/products/individual   
+2. Download this repo and unzip it 
+3. On your search bar, type "Anaconda Prompt (anaconda3)" and right click on it and click "Run as Adminstrator"  
+4. Create a VM (anyname you want) by type ```Bash conda create -n xxxx pip python=3.x  ``` "xxxx" is the name of the new virtual environment and "x" is the corresponding python version.   
 
 
 ## This website gives you the tested build configurations for windows OS. https://www.tensorflow.org/install/source_windows 
