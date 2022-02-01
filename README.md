@@ -34,5 +34,8 @@ python -m pip install --upgrade pip
 Configuration of CUDA and cuDNN should be automaticlly done, however, I recommend go to the windows system variable window to look it up.  
 A restart of the system is recommended after the installation of CUDA and cuDNN. 
 
+## TensorFlow API repo setup <br>
+This part is already done for those who would like to keep using `tensorflow-gpu-1.13.x` version to train classifiers. However, if you want to use the most updated version of TensorFlow API, navigate to this [link](https://github.com/tensorflow/models). Download and unzip it. Noted there are scripts I wrote in older one, you need to go into each folder to copy the file and cover the old one. <br>
+
 
   
