@@ -81,7 +81,8 @@ python setup.py install
 ```
 
 ## Data Collecting and Labelling
-
+* Once you gathered enough images (hundreds to thousands) you need for training, allocate 20% of them to `/object_detection/images/test` folder and 80% of them to `/object_detection/images/train` folder.
+* Label the images using the `LabelImg.exe` by opening it, navigating to the `images/train` and `images/test` folder.  
 
 
 
