@@ -1,15 +1,14 @@
 ## Hardware and Software Specs <br>  
-Hardware:  
-    1. NVIDIA RTX 2060 Super  
-
-OS:  
-    1. Windows 10  
+* Hardware:  
+    * 1. NVIDIA RTX 2060 Super  
+* OS:  
+    * 1. Windows 10  
         
-Software:  
-        1. tensorflow-gpu-1.13.2  
-        2. Python = 3.7  
-        3. CUDA: 7.4    
-        4. cuDNN: 10  
+* Software:  
+    * 1. tensorflow-gpu-1.13.2 
+    * 2. Python = 3.7  
+    * 3. CUDA: 7.4    
+    * 4. cuDNN: 10  
   
 
 ## Virtual Environment creation
