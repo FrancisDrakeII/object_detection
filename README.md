@@ -65,7 +65,7 @@ pip install matplotlib
 pip install pandas
 ```
 You might need more packages, if the system throws some error messages as `xxxx library is required or a higher version is needed`, just `pip install/uninstall xxxx` and install the compatible version of it. 
-* Configure the PYTHONPATH environment variable on your local computer
+* Configure the PYTHONPATH environment variable on your local host
    * Right click `This PC`, scroll down to `Advanced system settings` and click on it, click on `Environment Variables`, In `System variables` section, click on `New...`, In `Variable name` part, type `PYTHONPATH`, in `Variable value` part, type `C:\xxxx\models`. Note `xxxx` is the file path of this repo on your local host. 
    * Repeat the above step for 2 times for `C:\xxxx\models\research` & `C:\xxx\models\research\slim`, both variable names are the same as `PYTHONPATH` above.
 
