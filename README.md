@@ -26,7 +26,10 @@ conda create -n xxxx pip python=3.x
 activate xxxx
 python -m pip install --upgrade pip 
 ```  
-6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. 
+6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. ```Bash
+pip install tensorflow-gpu-xxx
+```  
+
 
 ## CUDA and cuDNN installation 
 [CUDA](https://developer.nvidia.com/cuda-toolkit) is a parallel computing platform and API that allows software to use certain types of GPU for general purpose. Make sure you select the compatible version.     
@@ -46,6 +49,7 @@ TensorFlow provides a bunch of object detection models in this [model zoo](https
 * Go to `/object_detection/training` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training), delete everything. <br>
 * Go to `/object_detection/inference_graph` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/inference_graph), delete everything. <br>
 
+## VM setup continued...
 
 
 
