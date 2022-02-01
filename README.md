@@ -40,6 +40,11 @@ This part is already done for those who would like to keep using `tensorflow-gpu
 ## TensorFlow Model Selection <br>
 TensorFlow provides a bunch of object detection models in this [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md). Each model has their own advantages and disadvanteges in terms of specific application you choose. For this repo, We will use Faster-RCNN-Inception-V2 Model ([tf1_detection_zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)). It's one of the famous object detection architectures that uses CNN. This [article](https://towardsdatascience.com/faster-rcnn-object-detection-f865e5ed7fc4) explains how this architecture works in details.
 
+## Training Object Detection Classifier <br>
+* Go to `/object_detection/images/train` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images/train) and Go to `/object_detection/images/test` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images/test), delete everything except `labelImg.exe`. <br>
+* Go to `/object_detection/images` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images), delete `test_labels.csv` and `train_labels.csv`. <br>
+* Go to `/object_detection/training` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training), delete everything. <br>
+* Go to `/object_detection/inference_graph` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/inference_graph), delete everything. <br>
 
 
 
