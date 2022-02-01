@@ -1,4 +1,4 @@
-## Hardware and Software Specs <br>  
+## Hardware and Software Specs 
 * Hardware:  
     * 1. NVIDIA RTX 2060 Super  
 * OS:  
@@ -11,7 +11,7 @@
     * 4. cuDNN: 10  
   
 
-## Virtual Environment creation
+## Virtual Environment Setup
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
 1. Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
 2. Download this repo and unzip it 
