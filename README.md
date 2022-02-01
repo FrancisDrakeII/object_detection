@@ -16,8 +16,12 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 1. Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
 2. Download this repo and unzip it 
 3. On your search bar, type "Anaconda Prompt (anaconda3)" and right click on it and click "Run as Adminstrator"  
-4. Create a VM (anyname you want) by type ```conda create -n xxxx pip python=3.x ```  "xxxx" is the name of the new virtual environment and "x" is the corresponding python version. 
-5. Activate this environment and update pip  
+4. Create a VM (anyname you want) by type 
+```Bash
+conda create -n xxxx pip python=3.x 
+```  
+"xxxx" is the name of the new virtual environment and "x" is the corresponding python version. 
+6. Activate this environment and update pip  
 ```Bash
 activate xxxx
 python -m pip install --upgrade pip 
