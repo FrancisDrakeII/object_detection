@@ -15,7 +15,7 @@
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
 1. Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
 2. Download this repo and unzip it 
-3. On your search bar, type "Anaconda Prompt (anaconda3)" and right click on it and click "Run as Adminstrator"  
+3. On your search bar, type `Anaconda Prompt (anaconda3)` and right click on it and click "Run as Adminstrator"  
 4. Create a VM (anyname you want) by type 
 ```Bash
 conda create -n xxxx pip python=3.x 
@@ -26,10 +26,11 @@ conda create -n xxxx pip python=3.x
 activate xxxx
 python -m pip install --upgrade pip 
 ```  
-6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. ```Bash
-pip install tensorflow-gpu-xxx
-```  
-
+6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. 
+```Bash
+pip install tensorflow-gpu-x.xx.x
+```
+x.xx.x is the specified version.
 
 ## CUDA and cuDNN installation 
 [CUDA](https://developer.nvidia.com/cuda-toolkit) is a parallel computing platform and API that allows software to use certain types of GPU for general purpose. Make sure you select the compatible version.     
@@ -50,7 +51,23 @@ TensorFlow provides a bunch of object detection models in this [model zoo](https
 * Go to `/object_detection/inference_graph` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/inference_graph), delete everything. <br>
 
 ## VM setup continued...
-
+* Reactivate your environment inside the Anaconda Prompt (anaconda3) terminal (remember run it as adminstrator). 
+* Pip install the following packages
+```Bash
+conda install -c anaconda protobuf
+pip install opencv-python
+pip install pillow
+pip install lxml
+pip install Cython
+pip install contextlib2
+pip install jupyter
+pip install matplotlib
+pip install pandas
+```
+You might need more packages, if the system throws some error messages as `xxxx library is required or a higher version is needed`, just `pip install/uninstall xxxx` and install the compatible version of it. 
+* Configure the PYTHONPATH environment variable on your local computer
+   * Right click `This PC`, scroll down to `Advanced system settings` and click on it, click on `Environment Variables`, In `System variables` section, click on `New...`, In `Variable name` part, type `PYTHONPATH`, in `Variable value` part, type `C:\xxxx\models`. Note `xxxx` is the file path of this repo on your local host. 
+   * Repeat the above step for 2 times for `C:\xxxx\models\research` & `C:\xxx\models\research\slim`, both variable names are the same as `PYTHONPATH` above.
 
 
 
