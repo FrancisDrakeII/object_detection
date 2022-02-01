@@ -18,10 +18,10 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 3. On your search bar, type "Anaconda Prompt (anaconda3)" and right click on it and click "Run as Adminstrator"  
 4. Create a VM (anyname you want) by type ```conda create -n xxxx pip python=3.x ```  "xxxx" is the name of the new virtual environment and "x" is the corresponding python version. 
 5. Activate this environment and update pip  
-        ```Bash
-        activate xxxx
-        python -m pip install --upgrade pip 
-        ```  
+```Bash
+activate xxxx
+python -m pip install --upgrade pip 
+```  
 6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. 
 
 ## CUDA and cuDNN installation 
@@ -29,8 +29,6 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 [cuDNN](https://developer.nvidia.com/cudnn-download-survey) is a GPU-accelerated library primitives for deep neural networks. Make sure you select the compatible version.
 Configuration of CUDA and cuDNN should be automaticlly done, however, I recommend go to the windows system variable window to look it up.  
 A restart of the system is recommended after the installation of CUDA and cuDNN. 
-```Bash
-activate xxxx
-```
+
 
   
