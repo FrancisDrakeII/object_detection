@@ -125,8 +125,27 @@ Note the name should match with the previous label name you created. <br>
  * Save the changes when exiting 
  
  ## Training Process
- 
+ If you're using __tensorflow-2.x.x__, *TensorFlow* deprecated the `train.py` file and replaced with `model_main.py` file, please change the command accordingly. <br>
+ * Navigate to /object_detection folder in command window, issue the following command to begin training: 
+```Bash
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+```
+* Initialization process may take up to 30 seconds to begin, if you saw some errors, I first suggest you to copy the error code and Google it. Most of the solutions should be there. If you still have problems, please reach me out via my email and give me the error message/log: zihuanteng@gmail.com. 
+* During training process, window will prompt the steps you are, loss in real time, depends on your training data size, model you chose, training time will vary. For Faster-RCNN-Inception-V2 model, I recommend stop the training process when loss consistently drops below 0.05. For light-weighted model such as the MobileNet-SSD series (usually implemented on Raspberry Pi/NVIDIA Jetson), I recommend stop the training when the loss consistently drops below 2.
+* To view the progress of training in details, Open a new Anaconda Prompt window as Adminstrator, activate the VM envirnment, and navigate to the ` C:\tensorflow1\models\research\object_detection` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection), and issue the command:
+```Bash
+C:\xxxx\models\research\object_detection>tensorboard --logdir=training
+```
+Now you can visualize the training progress via graphs in real time. 
+* To stop the training, simply pressing `Ctrl+C` in the command window. (Don't close the window yet!!!)
+* To export the training model, make sure you're in `/object_detection` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection) inside command terminal. Then issue the following command:
+```Bash
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+```
+The XXXX is the highest number .ckpt file in the [training folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training).
 
+## Implement the Trained Object Detection Classifier
+__Before moving onto the implementation, I just want to remind again of the growing ethical/moral concerns using AI technology, no matter what kind of instances you're trying to achieve using the machine learning, please make sure it follows the moral conduct.__
 
 
 
