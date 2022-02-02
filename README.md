@@ -134,7 +134,7 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 ```
 * Initialization process may take up to 30 seconds to begin, if you saw some errors, I first suggest you to copy the error code and Google it. Most of the solutions should be there. If you still have problems, please reach me out via my email and give me the error message/log: zihuanteng@gmail.com. 
 * During training process, window will prompt the steps you are, loss in real time, depends on your training data size, model you chose, training time will vary. For Faster-RCNN-Inception-V2 model, I recommend stop the training process when loss consistently drops below 0.05. For light-weighted model such as the MobileNet-SSD series (usually implemented on Raspberry Pi/NVIDIA Jetson), I recommend stop the training when the loss consistently drops below 2.
-* To view the progress of training in details, Open a new Anaconda Prompt window as Adminstrator, activate the VM envirnment, and navigate to the ` C:\tensorflow1\models\research\object_detection` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection), and issue the command:
+* To view the progress of training in details, Open a new Anaconda Prompt window as Adminstrator, activate the VM envirnment, and navigate to the ` C:\xxxx\models\research\object_detection` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection), and issue the command:
 ```Bash
 tensorboard --logdir=training
 ```
