@@ -21,7 +21,7 @@ A virtual environment is a tool that helps to keep dependencies required by diff
 conda create -n xxxx pip python=3.x 
 ```  
 "xxxx" is the name of the new virtual environment and "x" is the corresponding python version. (Please pay attention to the compatibility between tensorflow and Python as listed [here](https://www.tensorflow.org/install/source_windows)). For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. <br>    
-5. Activate this environment and update pip  
+  5. Activate this environment and update pip  
 ```Bash
 activate xxxx
 python -m pip install --upgrade pip 
