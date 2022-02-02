@@ -134,7 +134,7 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 * During training process, window will prompt the steps you are, loss in real time, depends on your training data size, model you chose, training time will vary. For Faster-RCNN-Inception-V2 model, I recommend stop the training process when loss consistently drops below 0.05. For light-weighted model such as the MobileNet-SSD series (usually implemented on Raspberry Pi/NVIDIA Jetson), I recommend stop the training when the loss consistently drops below 2.
 * To view the progress of training in details, Open a new Anaconda Prompt window as Adminstrator, activate the VM envirnment, and navigate to the ` C:\tensorflow1\models\research\object_detection` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection), and issue the command:
 ```Bash
-C:\xxxx\models\research\object_detection>tensorboard --logdir=training
+tensorboard --logdir=training
 ```
 Now you can visualize the training progress via graphs in real time. 
 * To stop the training, simply pressing `Ctrl+C` in the command window. (Don't close the window yet!!!)
