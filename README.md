@@ -70,6 +70,7 @@ You might need more packages, if the system throws some error messages as `xxxx 
 * Configure the PYTHONPATH environment variable on your local host
    * Right click `This PC`, scroll down to `Advanced system settings` and click on it, click on `Environment Variables`, In `System variables` section, click on `New...`, In `Variable name` part, type `PYTHONPATH`, in `Variable value` part, type `C:\xxxx\models`. Note `xxxx` is the file path of this repo on your local host. 
    * Repeat the above step for 2 times for `C:\xxxx\models\research` & `C:\xxx\models\research\slim`, both variable names are the same as `PYTHONPATH` above.
+   * Restart the computer
 * Compile Protobufs
    * Compile the Protobufs files that used by TF to configure model and training parameters. If you're training on a Windows OS using GPU, please proceed with the following commands for protoc compilation. Basically, we call out every `.proto` file in `object_detection/protos` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/protos) and create a `xxxx_pb2.py` file from every `xxxx.proto` file in this folder.
  ```Bash
