@@ -50,6 +50,7 @@ TensorFlow provides a bunch of object detection models in this [model zoo](https
 * Go to `/object_detection/training` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training), delete everything. <br>
 * Go to `/object_detection/inference_graph` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/inference_graph), delete everything. <br>
 
+
 ## VM setup continued...
 * Reactivate your environment inside the Anaconda Prompt (anaconda3) terminal (remember run it as adminstrator). 
 * Pip install the following packages
@@ -97,7 +98,35 @@ python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=image
 These will be used to train the new object detection classifier. <br>
 
 ## Labelling and Training Configuration
-* 
+* Go to `/object_detection/training` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training), create a file and save it as `labelmap.pbtxt`. Then open this file and type the following:
+```Bash
+item {
+  id: 1
+  name: 'xxx'
+}
+
+item {
+  id: 2
+  name: 'xxx'
+}
+
+.....
+```
+Note the name should match with the previous label name you created. <br>
+* Training pipeline defines which model and what parameters will be used for training. Like mentioned above, this tutorial will use faster_rcnn_inception_v2 models. Navigate to `/object_detection/samples/configs` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/samples/configs) and copy the `faster_rcnn_inception_v2_pets.config` file into the [/object_detection/training](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training) folder
+* Open this file under text editor option, Make the following changes:
+   * Line 9, change `num_classes` to the number of different objects you wants the classifier to detect. In my example, I want to detect "white","yellow","pod","bud", so `num_classes` would be 4.
+   * Line 106, change `fine_tune_checkpoint` to `"C:/xxxx/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"`
+   * Line 123, change `input_path` to `"C:/xxxx/models/research/object_detection/train.record"`
+   * Line 125, change `label_map_path` to `"C:/xxxx/models/research/object_detection/training/labelmap.pbtxt"`
+   * Line 130, change `num_examples` to the number of images in `/object_detection/images/test` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images/test). This number should be the total number of files in this (folder-1)/2. 
+   * Line 135, change `input_path` to `"C:/xxxx/models/research/object_detection/test.record"`
+   * Line 137, change `label_map_path` to `"C:/xxxx/models/research/object_detection/training/labelmap.pbtxt"` 
+ * Save the changes when exiting 
+ 
+ ## Training Process
+ 
+
 
 
 
