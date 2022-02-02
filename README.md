@@ -95,7 +95,9 @@ python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=imag
 python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record
 ```
 These will be used to train the new object detection classifier. <br>
-##Labelling and Training Configuration
+
+## Labelling and Training Configuration
+* 
 
 
 
