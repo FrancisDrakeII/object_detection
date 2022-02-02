@@ -132,7 +132,7 @@ Note the name should match with the previous label name you created. <br>
 ```Bash
 python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
-* Initialization process may take up to 30 seconds to begin, if you saw some errors, I first suggest you to copy the error code and Google it. Most of the solutions should be there. If you still have problems, please reach me out via my email and give me the error message/log: zihuanteng@gmail.com. 
+* Initialization process may take up to 30 seconds to begin, if you saw some errors, I first suggest you to copy the error code and Google it. Most of the solutions should be there. If you still have problems, please reach me out via email.
 * During training process, window will prompt the steps you are, loss in real time, depends on your training data size, model you chose, training time will vary. For Faster-RCNN-Inception-V2 model, I recommend stop the training process when loss consistently drops below 0.05. For light-weighted model such as the MobileNet-SSD series (usually implemented on Raspberry Pi/NVIDIA Jetson), I recommend stop the training when the loss consistently drops below 2.
 * To view the progress of training in details, Open a new Anaconda Prompt window as Adminstrator, activate the VM envirnment, and navigate to the ` C:\xxxx\models\research\object_detection` [directory](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection), and issue the command:
 ```Bash
@@ -147,7 +147,6 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 The XXXX is the highest number .ckpt file in the [training folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/training).
 
 ## Implement the Trained Object Detection Classifier
-__Before moving onto the implementation, I just want to remind again of the growing ethical/moral concerns using AI technology, no matter what kind of instances you're trying to achieve using the machine learning, please make sure it follows the moral conduct.__
 * At this stage, you can write your own python script under `/object_detection` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection). However, if you want to test it out using my code, feel free to do so.
   * Modify the `NUM_CLASSES` (Line 33) variable in the `Object_detection_webcam.py` script to the number you defined.
   * Run this script by issuing the following command (Make sure you navigate to `/object_detection` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection) in command prompt and your computer has a camera): 
