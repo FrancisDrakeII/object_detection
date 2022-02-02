@@ -87,8 +87,7 @@ python setup.py install
 ```Bash
 python xml_to_csv.py
 ``` 
-This script
-
+This script converts label data inside each image file from xml format to csv, which will be used in the later training process. It will create a ```train_labels.csv``` and ```test_label.csv``` file in the  [/object_detection/images](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images) folder. <br>
 
 
 
