@@ -156,7 +156,8 @@ python Object_detection_webcam.py
 Now you can see the objects it's detected in real time!
 
 ## Acknowledgement 
-I would like to express my gratitude and respect to the following people for your help and support in this project. Through this project, I have a clear career plan in the direction of SDE/robotics：<br>
+I would like to express my gratitude and respect to the following people for your help and support in this project. Through this project, I have a clear career plan in the direction of SDE/robotics：<br> 
+
 Dr. William Eisenstadt <br>
 Dr. Ian Small <br>
 Dr. Rebecca Barocco <br> 
