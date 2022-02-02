@@ -82,7 +82,12 @@ python setup.py install
 
 ## Data Collecting and Labelling
 * Once you gathered enough images (hundreds to thousands) you need for training, allocate 20% of them to `/object_detection/images/test` folder and 80% of them to `/object_detection/images/train` folder.
-* Label the images using the `LabelImg.exe` by opening it, navigating to the `images/train` and `images/test` folder.  
+* Label the images using the `LabelImg.exe` by opening it, navigating to the `images/train` and `images/test` folder. 
+* To generate training data, navigate to the `\object_detection folder` folder inside the anaconda prompt, then type
+```Bash
+python xml_to_csv.py
+``` 
+This script
 
 
 
