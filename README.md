@@ -1,5 +1,5 @@
 ## Hardware and Software Specs 
-Following is the list of the hardware, operation system, and software environment I used when I implement this project. These are for reference only, you can choose any GPU, systems you want if you want to recreate this project. However, you do need to pay attention to the software packages (especially the compatibility between them) because they're constantly getting updated.
+Following is the list of the hardware, operation system, and software environment I used when I implement this project. These are for reference only, you can choose any GPU, systems you want if you want to recreate this project. However, you do need to pay attention to the software packages (especially the compatibility between them) because they're constantly getting updated by publishers.
 * Hardware:  
    * NVIDIA RTX 2060 Super  
 * OS:  
@@ -14,19 +14,19 @@ Following is the list of the hardware, operation system, and software environmen
 ## Virtual Environment Setup
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
 1. Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
-2. Download this repo and unzip it 
+2. Download this repo and unzip it (or git clone)
 3. On your search bar, type `Anaconda Prompt (anaconda3)` and right click on it and click "Run as Adminstrator"  
 4. Create a VM (anyname you want) by type 
 ```Bash
 conda create -n xxxx pip python=3.x 
 ```  
-"xxxx" is the name of the new virtual environment and "x" is the corresponding python version. 
+"xxxx" is the name of the new virtual environment and "x" is the corresponding python version. (Please pay attention to the compatibility between tensorflow and Python as listed [here](https://www.tensorflow.org/install/source_windows)). For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10.
 6. Activate this environment and update pip  
 ```Bash
 activate xxxx
 python -m pip install --upgrade pip 
 ```  
-6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS. For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. 
+6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS.  
 ```Bash
 pip install tensorflow-gpu-x.xx.x
 ```
@@ -35,8 +35,9 @@ x.xx.x is the specified version.
 ## CUDA and cuDNN installation 
 [CUDA](https://developer.nvidia.com/cuda-toolkit) is a parallel computing platform and API that allows software to use certain types of GPU for general purpose. Make sure you select the compatible version.     
 [cuDNN](https://developer.nvidia.com/cudnn-download-survey) is a GPU-accelerated library primitives for deep neural networks. Make sure you select the compatible version.
+Again, pay attention to the [compatibility](https://www.tensorflow.org/install/source_windows) between Python, CUDA and cuDNN. 
 Configuration of CUDA and cuDNN should be automaticlly done, however, I recommend go to the windows system variable window to look it up.  
-A restart of the system is recommended after the installation of CUDA and cuDNN. 
+A restart of the system is recommended at this stage after the installation of CUDA and cuDNN. 
 
 ## TensorFlow API repo setup <br>
 This part is already done for those who would like to keep using `tensorflow-gpu-1.13.x` version to train classifiers. However, if you want to use the most updated version of TensorFlow API, navigate to this [link](https://github.com/tensorflow/models). Download and unzip it. Noted I wrote some additional scripts and put some object detection models into the old code, please keep the [object_detection](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection) folder as it was. <br>
@@ -146,11 +147,19 @@ The XXXX is the highest number .ckpt file in the [training folder](https://githu
 
 ## Implement the Trained Object Detection Classifier
 __Before moving onto the implementation, I just want to remind again of the growing ethical/moral concerns using AI technology, no matter what kind of instances you're trying to achieve using the machine learning, please make sure it follows the moral conduct.__
+* At this stage, you can write your own python script under `/object_detection` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection). However, if you want to test it out using my code, feel free to do so.
+  * Modify the `NUM_CLASSES` (Line 33) variable in the `Object_detection_webcam.py` script to the number you defined.
+  * Run this script by issuing the following command (Make sure you navigate to `/object_detection` [folder](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection) in command prompt and your computer has a camera): 
+```Bash
+python Object_detection_webcam.py
+```
+Now you can see the objects it's detected in real time!
 
-
-
-
-
+## Acknowledgement 
+I would like to express my gratitude and respect to the following people for your help and support in clarifying my future career plan in the direction of SDE/robotics：<br>
+Dr. William Eisenstadt <br>
+Dr. Ian Small <br>
+Dr. Rebecca Barocco <br> 
 
 
 
