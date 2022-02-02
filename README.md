@@ -13,20 +13,20 @@ Following is the list of the hardware, operation system, and software environmen
 
 ## Virtual Environment Setup
 A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. Sort of like your house has kitchen, bedroom, bathroom... and each room is meant for each specific activity.  
-1. Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
-2. Download this repo and unzip it (or git clone)
-3. On your search bar, type `Anaconda Prompt (anaconda3)` and right click on it and click "Run as Adminstrator"  
-4. Create a VM (anyname you want) by type 
+* Download and install [Anaconda](https://www.anaconda.com/products/individual) for windows    
+* Download this repo and unzip it (or git clone)
+* On your search bar, type `Anaconda Prompt (anaconda3)` and right click on it and click "Run as Adminstrator"  
+* Create a VM (anyname you want) by type 
 ```Bash
 conda create -n xxxx pip python=3.x 
 ```  
 "xxxx" is the name of the new virtual environment and "x" is the corresponding python version. (Please pay attention to the compatibility between tensorflow and Python as listed [here](https://www.tensorflow.org/install/source_windows)). For tensorflow-gpu-1.13.x version, the compatible Python version is 3.5-3.7, cuDNN is 7.4 and CUDA is 10. <br>    
-  5. Activate this environment and update pip  
+* Activate this environment and update pip  
 ```Bash
 activate xxxx
 python -m pip install --upgrade pip 
 ```  
-6. Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS.  
+* Install Tensorflow GPU version - This [website](https://www.tensorflow.org/install/source_windows ) gives you the tested build configurations for windows OS.  
 ```Bash
 pip install tensorflow-gpu-x.xx.x
 ```
