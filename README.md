@@ -89,11 +89,13 @@ python xml_to_csv.py
 ``` 
 This script converts label data inside each image file from xml format to csv, which will be used in the later training process. It will create a [train_labels.csv](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/images/test_labels.csv) and [test_label.csv](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/images/train_labels.csv) file in the  [/object_detection/images](https://github.com/FrancisDrakeII/object_detection/tree/main/models/research/object_detection/images) folder. <br>
 * Open [generate_tfrecord.py](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/generate_tfrecord.py) and move to line 36 where the ```class_text_to_int``` function located at, change the name of the label to your defined label. <br>
-* Navigate to `/object_detection` folder inside command terminal and issue the folling command to generate the [train.record](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/train.record) and [test.record](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/test.record) file. <br>
+* Navigate to `/object_detection` folder inside command terminal and issue the folling command to generate the [train.record](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/train.record) and [test.record](https://github.com/FrancisDrakeII/object_detection/blob/main/models/research/object_detection/test.record) file.
 ```Bash
 python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record
 python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record
 ```
+These will be used to train the new object detection classifier. <br>
+##Labelling and Training Configuration
 
 
 
