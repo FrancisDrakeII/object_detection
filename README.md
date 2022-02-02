@@ -1,14 +1,14 @@
 ## Hardware and Software Specs 
+Following is the list of the hardware, operation system, and software environment I used when I implement this project. These are for reference only, you can choose any GPU, systems you want if you want to recreate this project. However, you do need to pay attention to the software packages (especially the compatibility between them) because they're constantly getting updated.
 * Hardware:  
-    * NVIDIA RTX 2060 Super  
+   * NVIDIA RTX 2060 Super  
 * OS:  
-    * Windows 10  
-        
+   * Windows 10       
 * Software:  
-    * tensorflow-gpu-1.13.2 
-    * Python = 3.7  
-    * CUDA: 7.4    
-    * cuDNN: 10  
+   * tensorflow-gpu-1.13.2 
+   * Python = 3.7  
+   * CUDA: 7.4    
+   * cuDNN: 10  
   
 
 ## Virtual Environment Setup
